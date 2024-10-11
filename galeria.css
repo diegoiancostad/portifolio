@@ -1,0 +1,119 @@
+.div-center {
+    display: grid;
+    place-items: center;                
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+.sidebar {
+    height: 100vh; /* Altura total da janela */
+    width: 250px;   /* Largura da barra lateral */
+    background-color: #333;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar a.active {
+    color: blue;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    display: none; /* Oculta o conteúdo inicialmente */
+}
+
+.content.active {
+    display: block;
+}
+main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-left: 350px; /* Mover para a direita */
+}
+
+/* Estilo do cartão */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    position: relative; /* Define a posição relativa */
+    top: 00px; /* Move o cartão para baixo */
+    left: 200px; /* Move o cartão para a direita */
+}
+
+/* Estilo da imagem do cartão */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo do conteúdo do cartão */
+.card-content {
+    padding: 20px;
+}
+
+/* Estilo do título */
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+/* Estilo da descrição */
+.card-description {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Estilo do botão */
+.card-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo do botão ao passar o mouse */
+.card-button:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-image: url('portifolio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
